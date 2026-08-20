@@ -27,7 +27,7 @@ jobs:
           cache: pnpm
 
       - name: Instalar dependencias
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --no-frozen-lockfile
 
       - name: Compilar EXE de Windows
         run: pnpm electron:build:win
@@ -61,7 +61,7 @@ jobs:
           cache: pnpm
 
       - name: Instalar dependencias
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --no-frozen-lockfile
 
       - name: Compilar DMG universal de macOS
         run: pnpm electron:build:mac
