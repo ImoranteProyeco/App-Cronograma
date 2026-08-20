@@ -1,0 +1,6 @@
+Generador de Cronogramas v0.1.7
+
+Esta version esta preparada para:
+- Windows x64: EXE portable.
+- macOS Universal: Intel + Apple Silicon en un mismo DMG/ZIP.
+- Compilacion automatica en GitHub Actions.

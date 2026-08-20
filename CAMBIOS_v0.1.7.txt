@@ -1,0 +1,9 @@
+Generador de Cronogramas v0.1.7
+
+- Mantiene todas las correcciones de v0.1.6.
+- Mantiene Windows x64 portable mediante electron-builder 24.6.3.
+- Agrega compilacion macOS Universal (Intel x64 + Apple Silicon arm64).
+- Agrega build/icon.icns para macOS.
+- Agrega comandos electron:build:win, electron:build:mac, electron:build:mac:x64 y electron:build:mac:arm64.
+- Agrega GitHub Actions para generar automaticamente EXE y DMG/ZIP.
+- El titulo de Electron ahora toma la version directamente desde package.json.
