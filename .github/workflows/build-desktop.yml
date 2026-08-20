@@ -30,7 +30,7 @@ jobs:
         run: pnpm install --no-frozen-lockfile
 
       - name: Compilar EXE de Windows
-        run: pnpm electron:build:win
+        run: pnpm electron:build:win -- --publish never
 
       - name: Guardar EXE como artefacto
         uses: actions/upload-artifact@v4
@@ -64,7 +64,7 @@ jobs:
         run: pnpm install --no-frozen-lockfile
 
       - name: Compilar DMG universal de macOS
-        run: pnpm electron:build:mac
+        run: pnpm electron:build:mac -- --publish never
 
       - name: Guardar DMG/ZIP como artefactos
         uses: actions/upload-artifact@v4
